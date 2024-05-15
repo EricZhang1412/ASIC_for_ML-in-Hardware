@@ -1,12 +1,46 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/VivadoWS/mini_prj/mini_prj.gen/sources_1/ip/x_bram_8/sim/x_bram_8.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module x_bram_8
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/VivadoWS/mini_prj/mini_prj.gen/sources_1/ip/x_bram_7/sim/x_bram_7.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module x_bram_7
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/VivadoWS/mini_prj/mini_prj.gen/sources_1/ip/x_bram_6/sim/x_bram_6.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module x_bram_6
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/VivadoWS/mini_prj/mini_prj.gen/sources_1/ip/x_bram_5/sim/x_bram_5.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module x_bram_5
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/VivadoWS/mini_prj/mini_prj.gen/sources_1/ip/x_bram_4/sim/x_bram_4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module x_bram_4
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/VivadoWS/mini_prj/mini_prj.gen/sources_1/ip/x_bram_3/sim/x_bram_3.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module x_bram_3
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/VivadoWS/mini_prj/mini_prj.gen/sources_1/ip/x_bram_2/sim/x_bram_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module x_bram_2
 INFO: [VRFC 10-2263] Analyzing Verilog file "E:/VivadoWS/mini_prj/mini_prj.gen/sources_1/ip/x_bram_1/sim/x_bram_1.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module x_bram_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/VivadoWS/mini_prj/mini_prj.gen/sources_1/ip/w_bram_8/sim/w_bram_8.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module w_bram_8
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/VivadoWS/mini_prj/mini_prj.gen/sources_1/ip/w_bram_7/sim/w_bram_7.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module w_bram_7
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/VivadoWS/mini_prj/mini_prj.gen/sources_1/ip/w_bram_6/sim/w_bram_6.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module w_bram_6
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/VivadoWS/mini_prj/mini_prj.gen/sources_1/ip/w_bram_5/sim/w_bram_5.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module w_bram_5
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/VivadoWS/mini_prj/mini_prj.gen/sources_1/ip/w_bram_4/sim/w_bram_4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module w_bram_4
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/VivadoWS/mini_prj/mini_prj.gen/sources_1/ip/w_bram_3/sim/w_bram_3.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module w_bram_3
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/VivadoWS/mini_prj/mini_prj.gen/sources_1/ip/w_bram_2/sim/w_bram_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module w_bram_2
 INFO: [VRFC 10-2263] Analyzing Verilog file "E:/VivadoWS/mini_prj/mini_prj.gen/sources_1/ip/w_bram_1/sim/w_bram_1.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module w_bram_1
 INFO: [VRFC 10-2263] Analyzing Verilog file "E:/VivadoWS/mini_prj/mini_prj.srcs/sources_1/new/fc1.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module fc1
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/VivadoWS/mini_prj/mini_prj.srcs/sources_1/new/fc1_controller.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fc1_controller
+WARNING: [VRFC 10-9336] redeclaration of ANSI port 'fc1_enable' is not allowed [E:/VivadoWS/mini_prj/mini_prj.srcs/sources_1/new/fc1_controller.v:51]
+WARNING: [VRFC 10-9336] redeclaration of ANSI port 'fc1_finish' is not allowed [E:/VivadoWS/mini_prj/mini_prj.srcs/sources_1/new/fc1_controller.v:52]
+WARNING: [VRFC 10-9336] redeclaration of ANSI port 'fc1_valid' is not allowed [E:/VivadoWS/mini_prj/mini_prj.srcs/sources_1/new/fc1_controller.v:53]
 INFO: [VRFC 10-2263] Analyzing Verilog file "E:/VivadoWS/mini_prj/mini_prj.srcs/sources_1/new/single_pe.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module single_pe
 INFO: [VRFC 10-2263] Analyzing Verilog file "E:/VivadoWS/mini_prj/mini_prj.srcs/sources_1/new/top_module.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module top_module
+WARNING: [VRFC 10-9336] redeclaration of ANSI port 'fc1_input_flag' is not allowed [E:/VivadoWS/mini_prj/mini_prj.srcs/sources_1/new/top_module.v:180]
 INFO: [VRFC 10-2263] Analyzing Verilog file "E:/VivadoWS/mini_prj/mini_prj.srcs/sim_1/new/tb_top_module.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module tb_top_module

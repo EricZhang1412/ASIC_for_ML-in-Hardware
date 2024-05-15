@@ -1,0 +1,6 @@
+verilog xil_defaultlib  \
+"../../../../mini_prj.gen/sources_1/ip/x_bram_5/sim/x_bram_5.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+nosort

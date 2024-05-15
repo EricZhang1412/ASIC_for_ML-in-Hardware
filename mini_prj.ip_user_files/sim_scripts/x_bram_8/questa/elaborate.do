@@ -1,0 +1,1 @@
+vopt +acc=npr -l elaborate.log -L xil_defaultlib -L xpm -L blk_mem_gen_v8_4_5 -L unisims_ver -L unimacro_ver -L secureip -work xil_defaultlib xil_defaultlib.x_bram_8 xil_defaultlib.glbl -o x_bram_8_opt
