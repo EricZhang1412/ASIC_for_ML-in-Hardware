@@ -1,0 +1,2 @@
+w_bram_1.v,verilog,xil_defaultlib,../../../../mini_prj.gen/sources_1/ip/w_bram_1/sim/w_bram_1.v,
+glbl.v,Verilog,xil_defaultlib,glbl.v

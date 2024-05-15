@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Wed May 15 12:58:35 2024
+# Process ID: 52872
+# Current directory: E:/VivadoWS/mini_prj/mini_prj.runs/x_bram_1_synth_1
+# Command line: vivado.exe -log x_bram_1.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source x_bram_1.tcl
+# Log file: E:/VivadoWS/mini_prj/mini_prj.runs/x_bram_1_synth_1/x_bram_1.vds
+# Journal file: E:/VivadoWS/mini_prj/mini_prj.runs/x_bram_1_synth_1\vivado.jou
+# Running On: DESKTOP-QHCEGM4, OS: Windows, CPU Frequency: 2496 MHz, CPU Physical cores: 10, Host memory: 68523 MB
+#-----------------------------------------------------------
+source x_bram_1.tcl -notrace
