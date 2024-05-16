@@ -1,7 +1,7 @@
 // Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
-// Date        : Tue May 14 21:49:40 2024
+// Date        : Thu May 16 02:28:09 2024
 // Host        : DESKTOP-QHCEGM4 running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode synth_stub
 //               e:/VivadoWS/mini_prj/mini_prj.gen/sources_1/ip/w_bram_1/w_bram_1_stub.v

@@ -23,12 +23,14 @@ module fc1(
     input clk,
     input rst_n,
     input [511:0] x, // 64 * 8 = 512
-    input [511:0] w, // 64 * 8 = 512
-    output [23:0] sum // 最终部分和结果
+    input [511:0] w, // 64 * 8 = 512   
+    input first_input_flag,
+    output wire signed [7:0] sum_8b // 最终部分和结果
 );
 
-    wire [20:0] pe_out[63:0];
-    reg first_input_flag;
+    wire signed [20:0] pe_out[63:0];
+ 
+    wire signed [23:0] final_sum;
 
     integer i;
 
@@ -48,22 +50,13 @@ module fc1(
         end
     endgenerate
 
-    // Set first_input_flag at the start of each input group
-    always @(posedge clk or negedge rst_n) begin
-        if (!rst_n) begin
-            first_input_flag <= 1'b1;
-        end
-        else begin
-            first_input_flag <= 1'b0;
-        end
-    end
 
     // Sum up the outputs from all PEs using an addition tree
-    wire [23:0] sum_level1[31:0];
-    wire [23:0] sum_level2[15:0];
-    wire [23:0] sum_level3[7:0];
-    wire [23:0] sum_level4[3:0];
-    wire [23:0] sum_level5[1:0];
+    wire signed [23:0] sum_level1[31:0];
+    wire signed [23:0] sum_level2[15:0];
+    wire signed [23:0] sum_level3[7:0];
+    wire signed [23:0] sum_level4[3:0];
+    wire signed [23:0] sum_level5[1:0];
 
     // Level 1
     generate
@@ -101,17 +94,8 @@ module fc1(
     endgenerate
 
     // Final sum
-    reg [23:0] sum_reg;
-    always @(posedge clk or negedge rst_n) begin
-        if (!rst_n) begin
-            sum_reg <= 24'd0;
-        end
-        else begin
-            sum_reg <= sum_level5[0] + sum_level5[1];
-        end
-    end
-
-    assign sum = sum_reg;
+    assign final_sum = sum_level5[0] + sum_level5[1];
+    assign sum_8b = final_sum[23:16];
 
 endmodule
 
