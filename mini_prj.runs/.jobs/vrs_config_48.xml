@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="w_bram_6_synth_1" LaunchDir="E:/VivadoWS/ASIC_for_ML-in-Hardware/mini_prj.runs/w_bram_6_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="w_bram_7_synth_1" LaunchDir="E:/VivadoWS/ASIC_for_ML-in-Hardware/mini_prj.runs/w_bram_7_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="w_bram_6_synth_1"/>
+	</Run>
+	<Run Id="w_bram_8_synth_1" LaunchDir="E:/VivadoWS/ASIC_for_ML-in-Hardware/mini_prj.runs/w_bram_8_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="w_bram_6_synth_1"/>
+	</Run>
+	<Run Id="synth_1" LaunchDir="E:/VivadoWS/ASIC_for_ML-in-Hardware/mini_prj.runs/synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado">
+		<Parent Id="w_bram_6_synth_1"/>
+		<Parent Id="w_bram_7_synth_1"/>
+		<Parent Id="w_bram_8_synth_1"/>
+	</Run>
+	<Parameters>
+		<Parameter Name="runs.monitorLSFJobs" Val="true" Type="bool"/>
+		<Parameter Name="runs.enableClusterConf" Val="true" Type="bool"/>
+	</Parameters>
+</Runs>
+

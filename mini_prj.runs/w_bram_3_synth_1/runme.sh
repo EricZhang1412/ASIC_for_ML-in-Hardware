@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='E:/VivadoWS/mini_prj/mini_prj.runs/w_bram_3_synth_1'
+HD_PWD='E:/VivadoWS/ASIC_for_ML-in-Hardware/mini_prj.runs/w_bram_3_synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

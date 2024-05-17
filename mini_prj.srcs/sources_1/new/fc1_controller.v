@@ -33,13 +33,14 @@ module fc1_controller
     input [511  :   0]      w_input                             ,
     input                   start_signal                        ,
 
-    output reg [511 :   0]      x_output                            ,
-    output reg [511 :   0]      w_output                            ,
+    output [511 :   0]      x_output                            ,
+    output [511 :   0]      w_output                            ,
     output     [8   :   0]      x_addr                              ,               //output x address for BRAM
     output reg [12  :   0]      w_addr                              ,               //output w address for BRAM
     output                  fc1_enable                           ,
     output                  fc1_valid                           ,
-    output                  fc1_finish                          
+    output                  fc1_finish                          ,
+    output                  temp_flag                       
     );
 
     reg [FC1_INPUT_BATCH_COUNTER + FC1_INPUT_BATCHWISE_COUNTER + FC1_OUTPUT_CHANNEL_COUNTER -1 : 0] addr_counter       ;
@@ -48,10 +49,11 @@ module fc1_controller
     // reg [FC1_OUTPUT_CHANNEL_COUNTER         - 1 : 0]                FC1_OUTPUT_CHANNEL_COUNTER                       ;
     reg [FC1_WEIGHT_ADDR_COUNTER                                                        - 1 : 0] weight_counter     ;
 
-    reg                                                                                      fc1_enable         ;
-    reg                                                                                      fc1_finish         ;
-    reg                                                                                      fc1_valid          ;
-    reg                                                                                      fc1_flag           ;
+    reg                            fc1_enable         ;
+    reg                            fc1_finish         ;
+    reg                            fc1_valid          ;
+    reg                            fc1_flag           ;
+    reg                            temp_flag          ;
 
 
     //flag for delay one clock
@@ -69,9 +71,12 @@ module fc1_controller
             fc1_valid                    <=          1'b0                                                        ;
 
             w_addr                       <=          'b0                                                        ;
+            temp_flag                       <=          'b0                                                     ;
             // x_addr                       <=          'b0                                                        ;
         end         
         else begin 
+
+            temp_flag                   <=          fc1_valid;                       
             if (fc1_finish) begin
                 fc1_flag                 <=          1'b0                                                        ;
                 fc1_enable               <=          1'b0                                                        ;
@@ -107,20 +112,21 @@ module fc1_controller
                         end
                     end
                         
-                    x_output                     <=          x_input                                                     ;
-                    w_output                     <=          w_input                                                     ;
+                    // x_output                     <=          x_input                                                     ;
+                    // w_output                     <=          w_input                                                     ;
                 end
                 else begin
                     fc1_flag                 <=          1'b0                                                    ;
                     fc1_enable               <=          1'b0                                                    ;
-                    x_output                 <=          'b0                                                       ;
-                    w_output                 <=          'b0                                                       ;
+                    // x_output                 <=          'b0                                                       ;
+                    // w_output                 <=          'b0                                                       ;
                 end
             end
         end
     end
 
-
     assign x_addr                       =          {{addr_counter[FC1_INPUT_BATCH_COUNTER+FC1_OUTPUT_CHANNEL_COUNTER+FC1_INPUT_BATCHWISE_COUNTER-1:FC1_OUTPUT_CHANNEL_COUNTER+FC1_INPUT_BATCHWISE_COUNTER]}, 
     addr_counter[FC1_INPUT_BATCHWISE_COUNTER-1:0]};
+    assign x_output = x_input;
+    assign w_output = w_input;
 endmodule

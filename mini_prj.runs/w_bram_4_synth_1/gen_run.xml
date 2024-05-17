@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="w_bram_4_synth_1" LaunchPart="xc7z020clg400-1" LaunchTime="1715771106">
+<GenRun Id="w_bram_4_synth_1" LaunchPart="xc7z020clg400-1" LaunchTime="1715932686">
   <File Type="PA-TCL" Name="w_bram_4.tcl"/>
   <File Type="REPORTS-TCL" Name="w_bram_4_reports.tcl"/>
   <File Type="RDS-RDS" Name="w_bram_4.vds"/>
@@ -41,6 +41,14 @@
         <Attr Name="UsedInSteps" Val="synth_1"/>
         <Attr Name="UsedInSteps" Val="synth_1_copy_1"/>
         <Attr Name="UsedInSteps" Val="synth_1_copy_2"/>
+        <Attr Name="AutoDcp" Val="1"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../mini_prj/mini_prj.srcs/utils_1/imports/synth_1/single_pe.dcp">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedInSteps" Val="synth_1"/>
         <Attr Name="AutoDcp" Val="1"/>
       </FileInfo>
     </File>

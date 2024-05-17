@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
-| Date         : Wed May 15 13:46:17 2024
+| Date         : Fri May 17 23:47:50 2024
 | Host         : DESKTOP-QHCEGM4 running 64-bit major release  (build 9200)
 | Command      : report_utilization -file top_module_utilization_synth.rpt -pb top_module_utilization_synth.pb
 | Design       : top_module
@@ -31,11 +31,11 @@ Table of Contents
 +-------------------------+------+-------+------------+-----------+-------+
 |        Site Type        | Used | Fixed | Prohibited | Available | Util% |
 +-------------------------+------+-------+------------+-----------+-------+
-| Slice LUTs*             | 6566 |     0 |          0 |     53200 | 12.34 |
-|   LUT as Logic          | 6566 |     0 |          0 |     53200 | 12.34 |
+| Slice LUTs*             | 5935 |     0 |          0 |     53200 | 11.16 |
+|   LUT as Logic          | 5935 |     0 |          0 |     53200 | 11.16 |
 |   LUT as Memory         |    0 |     0 |          0 |     17400 |  0.00 |
-| Slice Registers         | 2418 |     0 |          0 |    106400 |  2.27 |
-|   Register as Flip Flop | 2418 |     0 |          0 |    106400 |  2.27 |
+| Slice Registers         | 1342 |     0 |          0 |    106400 |  1.26 |
+|   Register as Flip Flop | 1342 |     0 |          0 |    106400 |  1.26 |
 |   Register as Latch     |    0 |     0 |          0 |    106400 |  0.00 |
 | F7 Muxes                |    0 |     0 |          0 |     26600 |  0.00 |
 | F8 Muxes                |    0 |     0 |          0 |     13300 |  0.00 |
@@ -55,8 +55,8 @@ Table of Contents
 | 0     |            _ |         Set |            - |
 | 0     |            _ |       Reset |            - |
 | 0     |          Yes |           - |            - |
-| 9     |          Yes |           - |          Set |
-| 2409  |          Yes |           - |        Reset |
+| 0     |          Yes |           - |          Set |
+| 1342  |          Yes |           - |        Reset |
 | 0     |          Yes |         Set |            - |
 | 0     |          Yes |       Reset |            - |
 +-------+--------------+-------------+--------------+
@@ -91,7 +91,7 @@ Table of Contents
 +-----------------------------+------+-------+------------+-----------+-------+
 |          Site Type          | Used | Fixed | Prohibited | Available | Util% |
 +-----------------------------+------+-------+------------+-----------+-------+
-| Bonded IOB                  |   27 |     0 |          0 |       125 | 21.60 |
+| Bonded IOB                  |   56 |     0 |          0 |       125 | 44.80 |
 | Bonded IPADs                |    0 |     0 |          0 |         2 |  0.00 |
 | Bonded IOPADs               |    0 |     0 |          0 |       130 |  0.00 |
 | PHY_CONTROL                 |    0 |     0 |          0 |         4 |  0.00 |
@@ -147,17 +147,16 @@ Table of Contents
 +----------+------+---------------------+
 | Ref Name | Used | Functional Category |
 +----------+------+---------------------+
-| FDCE     | 2409 |        Flop & Latch |
-| LUT6     | 2299 |                 LUT |
-| LUT3     | 1821 |                 LUT |
-| LUT2     | 1795 |                 LUT |
-| LUT4     | 1649 |                 LUT |
-| CARRY4   | 1210 |          CarryLogic |
-| LUT5     |  612 |                 LUT |
-| OBUF     |   24 |                  IO |
-| FDPE     |    9 |        Flop & Latch |
+| LUT4     | 2213 |                 LUT |
+| LUT3     | 2126 |                 LUT |
+| LUT6     | 1790 |                 LUT |
+| LUT5     | 1618 |                 LUT |
+| LUT2     | 1473 |                 LUT |
+| FDCE     | 1342 |        Flop & Latch |
+| CARRY4   | 1250 |          CarryLogic |
+| OBUF     |   53 |                  IO |
+| LUT1     |    3 |                 LUT |
 | IBUF     |    3 |                  IO |
-| LUT1     |    1 |                 LUT |
 | BUFG     |    1 |               Clock |
 +----------+------+---------------------+
 
@@ -168,7 +167,21 @@ Table of Contents
 +----------+------+
 | Ref Name | Used |
 +----------+------+
+| x_bram_8 |    1 |
+| x_bram_7 |    1 |
+| x_bram_6 |    1 |
+| x_bram_5 |    1 |
+| x_bram_4 |    1 |
+| x_bram_3 |    1 |
+| x_bram_2 |    1 |
 | x_bram_1 |    1 |
+| w_bram_8 |    1 |
+| w_bram_7 |    1 |
+| w_bram_6 |    1 |
+| w_bram_5 |    1 |
+| w_bram_4 |    1 |
+| w_bram_3 |    1 |
+| w_bram_2 |    1 |
 | w_bram_1 |    1 |
 +----------+------+
 

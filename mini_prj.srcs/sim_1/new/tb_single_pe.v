@@ -24,11 +24,10 @@ module tb_single_pe();
 
 reg clk;
 reg rst_n;
-reg [7:0] x_in;
-reg [7:0] w_in;
-
-wire [20:0] y;
-wire [7:0] x_out;
+reg signed [7:0] x_in;
+reg signed [7:0] w_in;
+wire signed [19:0] y;
+wire signed [7:0] x_out;
 
 single_pe my_pe(
     .clk(clk),
@@ -51,8 +50,11 @@ initial begin
 end
 
 initial begin
-    #50; x_in = 8'd1; w_in = 8'd5;
-    #1000;
+    #10;
+    for (integer i = -30; i < 30 ;i = i+1 ) begin
+        #20; x_in = i; w_in = i;
+    end
+    #50;
     $finish(0);
 end
 

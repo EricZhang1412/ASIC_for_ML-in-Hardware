@@ -1,10 +1,10 @@
 -- Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
--- Date        : Wed May 15 14:08:43 2024
+-- Date        : Fri May 17 16:03:50 2024
 -- Host        : DESKTOP-QHCEGM4 running 64-bit major release  (build 9200)
 -- Command     : write_vhdl -force -mode synth_stub
---               e:/VivadoWS/mini_prj/mini_prj.gen/sources_1/ip/x_bram_2/x_bram_2_stub.vhdl
+--               e:/VivadoWS/ASIC_for_ML-in-Hardware/mini_prj.gen/sources_1/ip/x_bram_2/x_bram_2_stub.vhdl
 -- Design      : x_bram_2
 -- Purpose     : Stub declaration of top-level module interface
 -- Device      : xc7z020clg400-1

@@ -4,7 +4,7 @@
 
 set TIME_start [clock seconds] 
 namespace eval ::optrace {
-  variable script "E:/VivadoWS/mini_prj/mini_prj.runs/synth_1/top_module.tcl"
+  variable script "E:/VivadoWS/ASIC_for_ML-in-Hardware/mini_prj.runs/synth_1/top_module.tcl"
   variable category "vivado_synth"
 }
 
@@ -70,7 +70,11 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
+set_param checkpoint.writeSynthRtdsInDcp 1
+set_param synth.incrementalSynthesisCache {C:/Users/Eric Zhang/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-258276-DESKTOP-QHCEGM4/incrSyn}
 set_param simulator.modelsimInstallPath D:/modeltech64_2020.4/win64
+set_msg_config -id {Synth 8-256} -limit 10000
+set_msg_config -id {Synth 8-638} -limit 10000
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7z020clg400-1
 
@@ -78,27 +82,84 @@ set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
 set_msg_config -source 4 -id {IP_Flow 19-2162} -severity warning -new_severity info
-set_property webtalk.parent_dir E:/VivadoWS/mini_prj/mini_prj.cache/wt [current_project]
-set_property parent.project_path E:/VivadoWS/mini_prj/mini_prj.xpr [current_project]
+set_property webtalk.parent_dir E:/VivadoWS/ASIC_for_ML-in-Hardware/mini_prj.cache/wt [current_project]
+set_property parent.project_path E:/VivadoWS/ASIC_for_ML-in-Hardware/mini_prj.xpr [current_project]
 set_property XPM_LIBRARIES XPM_MEMORY [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
-set_property ip_output_repo e:/VivadoWS/mini_prj/mini_prj.cache/ip [current_project]
+set_property ip_output_repo e:/VivadoWS/ASIC_for_ML-in-Hardware/mini_prj.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
-add_files e:/VivadoWS/mini_prj/coe/w_bram_1.coe
-add_files E:/VivadoWS/mini_prj/mini_prj.srcs/sources_1/imports/coe/x_bram_1.coe
+add_files E:/VivadoWS/ASIC_for_ML-in-Hardware/coe/FCNet1/fc1_weight_block_0.coe
+add_files E:/VivadoWS/ASIC_for_ML-in-Hardware/coe/FCNet1/fc1_weight_block_1.coe
+add_files E:/VivadoWS/ASIC_for_ML-in-Hardware/coe/FCNet1/fc1_weight_block_2.coe
+add_files E:/VivadoWS/ASIC_for_ML-in-Hardware/coe/FCNet1/fc1_weight_block_3.coe
+add_files E:/VivadoWS/ASIC_for_ML-in-Hardware/coe/FCNet1/fc1_weight_block_4.coe
+add_files E:/VivadoWS/ASIC_for_ML-in-Hardware/coe/FCNet1/fc1_weight_block_5.coe
+add_files E:/VivadoWS/ASIC_for_ML-in-Hardware/coe/FCNet1/fc1_weight_block_6.coe
+add_files E:/VivadoWS/ASIC_for_ML-in-Hardware/coe/FCNet1/fc1_weight_block_7.coe
+add_files E:/VivadoWS/ASIC_for_ML-in-Hardware/coe/inputdata_8block/input_block_0.coe
+add_files E:/VivadoWS/ASIC_for_ML-in-Hardware/coe/inputdata_8block/input_block_1.coe
+add_files E:/VivadoWS/ASIC_for_ML-in-Hardware/coe/inputdata_8block/input_block_2.coe
+add_files E:/VivadoWS/ASIC_for_ML-in-Hardware/coe/inputdata_8block/input_block_3.coe
+add_files E:/VivadoWS/ASIC_for_ML-in-Hardware/coe/inputdata_8block/input_block_4.coe
+add_files E:/VivadoWS/ASIC_for_ML-in-Hardware/coe/inputdata_8block/input_block_5.coe
+add_files E:/VivadoWS/ASIC_for_ML-in-Hardware/coe/inputdata_8block/input_block_6.coe
+add_files E:/VivadoWS/ASIC_for_ML-in-Hardware/coe/inputdata_8block/input_block_7.coe
 read_verilog -library xil_defaultlib {
-  E:/VivadoWS/mini_prj/mini_prj.srcs/sources_1/new/fc1.v
-  E:/VivadoWS/mini_prj/mini_prj.srcs/sources_1/new/single_pe.v
-  E:/VivadoWS/mini_prj/mini_prj.srcs/sources_1/new/top_module.v
+  E:/VivadoWS/ASIC_for_ML-in-Hardware/mini_prj.srcs/sources_1/new/fc1.v
+  E:/VivadoWS/ASIC_for_ML-in-Hardware/mini_prj.srcs/sources_1/new/fc1_controller.v
+  E:/VivadoWS/ASIC_for_ML-in-Hardware/mini_prj.srcs/sources_1/new/single_pe.v
+  E:/VivadoWS/ASIC_for_ML-in-Hardware/mini_prj.srcs/sources_1/new/top_module.v
 }
-read_ip -quiet E:/VivadoWS/mini_prj/mini_prj.srcs/sources_1/ip/x_bram_1/x_bram_1.xci
-set_property used_in_implementation false [get_files -all e:/VivadoWS/mini_prj/mini_prj.gen/sources_1/ip/x_bram_1/x_bram_1_ooc.xdc]
+read_ip -quiet E:/VivadoWS/ASIC_for_ML-in-Hardware/mini_prj.srcs/sources_1/ip/x_bram_1/x_bram_1.xci
+set_property used_in_implementation false [get_files -all e:/VivadoWS/ASIC_for_ML-in-Hardware/mini_prj.gen/sources_1/ip/x_bram_1/x_bram_1_ooc.xdc]
 
-read_ip -quiet E:/VivadoWS/mini_prj/mini_prj.srcs/sources_1/ip/w_bram_1/w_bram_1.xci
-set_property used_in_implementation false [get_files -all e:/VivadoWS/mini_prj/mini_prj.gen/sources_1/ip/w_bram_1/w_bram_1_ooc.xdc]
+read_ip -quiet E:/VivadoWS/ASIC_for_ML-in-Hardware/mini_prj.srcs/sources_1/ip/w_bram_1/w_bram_1.xci
+set_property used_in_implementation false [get_files -all e:/VivadoWS/ASIC_for_ML-in-Hardware/mini_prj.gen/sources_1/ip/w_bram_1/w_bram_1_ooc.xdc]
+
+read_ip -quiet E:/VivadoWS/ASIC_for_ML-in-Hardware/mini_prj.srcs/sources_1/ip/x_bram_2/x_bram_2.xci
+set_property used_in_implementation false [get_files -all e:/VivadoWS/ASIC_for_ML-in-Hardware/mini_prj.gen/sources_1/ip/x_bram_2/x_bram_2_ooc.xdc]
+
+read_ip -quiet E:/VivadoWS/ASIC_for_ML-in-Hardware/mini_prj.srcs/sources_1/ip/x_bram_3/x_bram_3.xci
+set_property used_in_implementation false [get_files -all e:/VivadoWS/ASIC_for_ML-in-Hardware/mini_prj.gen/sources_1/ip/x_bram_3/x_bram_3_ooc.xdc]
+
+read_ip -quiet E:/VivadoWS/ASIC_for_ML-in-Hardware/mini_prj.srcs/sources_1/ip/x_bram_4/x_bram_4.xci
+set_property used_in_implementation false [get_files -all e:/VivadoWS/ASIC_for_ML-in-Hardware/mini_prj.gen/sources_1/ip/x_bram_4/x_bram_4_ooc.xdc]
+
+read_ip -quiet E:/VivadoWS/ASIC_for_ML-in-Hardware/mini_prj.srcs/sources_1/ip/x_bram_5/x_bram_5.xci
+set_property used_in_implementation false [get_files -all e:/VivadoWS/ASIC_for_ML-in-Hardware/mini_prj.gen/sources_1/ip/x_bram_5/x_bram_5_ooc.xdc]
+
+read_ip -quiet E:/VivadoWS/ASIC_for_ML-in-Hardware/mini_prj.srcs/sources_1/ip/x_bram_6/x_bram_6.xci
+set_property used_in_implementation false [get_files -all e:/VivadoWS/ASIC_for_ML-in-Hardware/mini_prj.gen/sources_1/ip/x_bram_6/x_bram_6_ooc.xdc]
+
+read_ip -quiet E:/VivadoWS/ASIC_for_ML-in-Hardware/mini_prj.srcs/sources_1/ip/x_bram_7/x_bram_7.xci
+set_property used_in_implementation false [get_files -all e:/VivadoWS/ASIC_for_ML-in-Hardware/mini_prj.gen/sources_1/ip/x_bram_7/x_bram_7_ooc.xdc]
+
+read_ip -quiet E:/VivadoWS/ASIC_for_ML-in-Hardware/mini_prj.srcs/sources_1/ip/x_bram_8/x_bram_8.xci
+set_property used_in_implementation false [get_files -all e:/VivadoWS/ASIC_for_ML-in-Hardware/mini_prj.gen/sources_1/ip/x_bram_8/x_bram_8_ooc.xdc]
+
+read_ip -quiet E:/VivadoWS/ASIC_for_ML-in-Hardware/mini_prj.srcs/sources_1/ip/w_bram_2/w_bram_2.xci
+set_property used_in_implementation false [get_files -all e:/VivadoWS/ASIC_for_ML-in-Hardware/mini_prj.gen/sources_1/ip/w_bram_2/w_bram_2_ooc.xdc]
+
+read_ip -quiet E:/VivadoWS/ASIC_for_ML-in-Hardware/mini_prj.srcs/sources_1/ip/w_bram_3/w_bram_3.xci
+set_property used_in_implementation false [get_files -all e:/VivadoWS/ASIC_for_ML-in-Hardware/mini_prj.gen/sources_1/ip/w_bram_3/w_bram_3_ooc.xdc]
+
+read_ip -quiet E:/VivadoWS/ASIC_for_ML-in-Hardware/mini_prj.srcs/sources_1/ip/w_bram_4/w_bram_4.xci
+set_property used_in_implementation false [get_files -all e:/VivadoWS/ASIC_for_ML-in-Hardware/mini_prj.gen/sources_1/ip/w_bram_4/w_bram_4_ooc.xdc]
+
+read_ip -quiet E:/VivadoWS/ASIC_for_ML-in-Hardware/mini_prj.srcs/sources_1/ip/w_bram_5/w_bram_5.xci
+set_property used_in_implementation false [get_files -all e:/VivadoWS/ASIC_for_ML-in-Hardware/mini_prj.gen/sources_1/ip/w_bram_5/w_bram_5_ooc.xdc]
+
+read_ip -quiet E:/VivadoWS/ASIC_for_ML-in-Hardware/mini_prj.srcs/sources_1/ip/w_bram_6/w_bram_6.xci
+set_property used_in_implementation false [get_files -all e:/VivadoWS/ASIC_for_ML-in-Hardware/mini_prj.gen/sources_1/ip/w_bram_6/w_bram_6_ooc.xdc]
+
+read_ip -quiet E:/VivadoWS/ASIC_for_ML-in-Hardware/mini_prj.srcs/sources_1/ip/w_bram_7/w_bram_7.xci
+set_property used_in_implementation false [get_files -all e:/VivadoWS/ASIC_for_ML-in-Hardware/mini_prj.gen/sources_1/ip/w_bram_7/w_bram_7_ooc.xdc]
+
+read_ip -quiet E:/VivadoWS/ASIC_for_ML-in-Hardware/mini_prj.srcs/sources_1/ip/w_bram_8/w_bram_8.xci
+set_property used_in_implementation false [get_files -all e:/VivadoWS/ASIC_for_ML-in-Hardware/mini_prj.gen/sources_1/ip/w_bram_8/w_bram_8_ooc.xdc]
 
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being

@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_top_module_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="tb_top_module" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0.008167 us"></ZoomStartTime>
+      <ZoomEndTime time="13.338168 us"></ZoomEndTime>
+      <Cursor1Time time="4.850000 us"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="258"></NameColumnWidth>
+      <ValueColumnWidth column_width="80"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="91" />
+   <wvobject fp_name="/tb_top_module/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_module/rst_n" type="logic">
+      <obj_property name="ElementShortName">rst_n</obj_property>
+      <obj_property name="ObjectShortName">rst_n</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_module/start_signal" type="logic">
+      <obj_property name="ElementShortName">start_signal</obj_property>
+      <obj_property name="ObjectShortName">start_signal</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_module/out" type="array">
+      <obj_property name="ElementShortName">out[7:0]</obj_property>
+      <obj_property name="ObjectShortName">out[7:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_module/fc1_valid" type="logic">
+      <obj_property name="ElementShortName">fc1_valid</obj_property>
+      <obj_property name="ObjectShortName">fc1_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_module/fc1_fake_valid" type="logic">
+      <obj_property name="ElementShortName">fc1_fake_valid</obj_property>
+      <obj_property name="ObjectShortName">fc1_fake_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_module/fc1_enable" type="logic">
+      <obj_property name="ElementShortName">fc1_enable</obj_property>
+      <obj_property name="ObjectShortName">fc1_enable</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_module/x_addr" type="array">
+      <obj_property name="ElementShortName">x_addr[8:0]</obj_property>
+      <obj_property name="ObjectShortName">x_addr[8:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_module/w_addr" type="array">
+      <obj_property name="ElementShortName">w_addr[12:0]</obj_property>
+      <obj_property name="ObjectShortName">w_addr[12:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_module/w_dout_1" type="array">
+      <obj_property name="ElementShortName">w_dout_1[63:0]</obj_property>
+      <obj_property name="ObjectShortName">w_dout_1[63:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_module/w_dout_2" type="array">
+      <obj_property name="ElementShortName">w_dout_2[63:0]</obj_property>
+      <obj_property name="ObjectShortName">w_dout_2[63:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_module/w_dout_3" type="array">
+      <obj_property name="ElementShortName">w_dout_3[63:0]</obj_property>
+      <obj_property name="ObjectShortName">w_dout_3[63:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_module/w_dout_4" type="array">
+      <obj_property name="ElementShortName">w_dout_4[63:0]</obj_property>
+      <obj_property name="ObjectShortName">w_dout_4[63:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_module/w_dout_5" type="array">
+      <obj_property name="ElementShortName">w_dout_5[63:0]</obj_property>
+      <obj_property name="ObjectShortName">w_dout_5[63:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_module/w_dout_6" type="array">
+      <obj_property name="ElementShortName">w_dout_6[63:0]</obj_property>
+      <obj_property name="ObjectShortName">w_dout_6[63:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_module/w_dout_7" type="array">
+      <obj_property name="ElementShortName">w_dout_7[63:0]</obj_property>
+      <obj_property name="ObjectShortName">w_dout_7[63:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_module/w_dout_8" type="array">
+      <obj_property name="ElementShortName">w_dout_8[63:0]</obj_property>
+      <obj_property name="ObjectShortName">w_dout_8[63:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_module/x_dout_1" type="array">
+      <obj_property name="ElementShortName">x_dout_1[63:0]</obj_property>
+      <obj_property name="ObjectShortName">x_dout_1[63:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_module/x_dout_2" type="array">
+      <obj_property name="ElementShortName">x_dout_2[63:0]</obj_property>
+      <obj_property name="ObjectShortName">x_dout_2[63:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_module/x_dout_3" type="array">
+      <obj_property name="ElementShortName">x_dout_3[63:0]</obj_property>
+      <obj_property name="ObjectShortName">x_dout_3[63:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_module/x_dout_4" type="array">
+      <obj_property name="ElementShortName">x_dout_4[63:0]</obj_property>
+      <obj_property name="ObjectShortName">x_dout_4[63:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_module/x_dout_5" type="array">
+      <obj_property name="ElementShortName">x_dout_5[63:0]</obj_property>
+      <obj_property name="ObjectShortName">x_dout_5[63:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_module/x_dout_6" type="array">
+      <obj_property name="ElementShortName">x_dout_6[63:0]</obj_property>
+      <obj_property name="ObjectShortName">x_dout_6[63:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_module/x_dout_7" type="array">
+      <obj_property name="ElementShortName">x_dout_7[63:0]</obj_property>
+      <obj_property name="ObjectShortName">x_dout_7[63:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_module/x_dout_8" type="array">
+      <obj_property name="ElementShortName">x_dout_8[63:0]</obj_property>
+      <obj_property name="ObjectShortName">x_dout_8[63:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_module/pe1_out" type="array">
+      <obj_property name="ElementShortName">pe1_out[19:0]</obj_property>
+      <obj_property name="ObjectShortName">pe1_out[19:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_module/pe2_out" type="array">
+      <obj_property name="ElementShortName">pe2_out[19:0]</obj_property>
+      <obj_property name="ObjectShortName">pe2_out[19:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_module/pe3_out" type="array">
+      <obj_property name="ElementShortName">pe3_out[19:0]</obj_property>
+      <obj_property name="ObjectShortName">pe3_out[19:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_module/pe4_out" type="array">
+      <obj_property name="ElementShortName">pe4_out[19:0]</obj_property>
+      <obj_property name="ObjectShortName">pe4_out[19:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_module/pe5_out" type="array">
+      <obj_property name="ElementShortName">pe5_out[19:0]</obj_property>
+      <obj_property name="ObjectShortName">pe5_out[19:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_module/pe6_out" type="array">
+      <obj_property name="ElementShortName">pe6_out[19:0]</obj_property>
+      <obj_property name="ObjectShortName">pe6_out[19:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_module/pe7_out" type="array">
+      <obj_property name="ElementShortName">pe7_out[19:0]</obj_property>
+      <obj_property name="ObjectShortName">pe7_out[19:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_module/pe8_out" type="array">
+      <obj_property name="ElementShortName">pe8_out[19:0]</obj_property>
+      <obj_property name="ObjectShortName">pe8_out[19:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_module/pe9_out" type="array">
+      <obj_property name="ElementShortName">pe9_out[19:0]</obj_property>
+      <obj_property name="ObjectShortName">pe9_out[19:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_module/pe10_out" type="array">
+      <obj_property name="ElementShortName">pe10_out[19:0]</obj_property>
+      <obj_property name="ObjectShortName">pe10_out[19:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_module/pe11_out" type="array">
+      <obj_property name="ElementShortName">pe11_out[19:0]</obj_property>
+      <obj_property name="ObjectShortName">pe11_out[19:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_module/pe12_out" type="array">
+      <obj_property name="ElementShortName">pe12_out[19:0]</obj_property>
+      <obj_property name="ObjectShortName">pe12_out[19:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_module/pe13_out" type="array">
+      <obj_property name="ElementShortName">pe13_out[19:0]</obj_property>
+      <obj_property name="ObjectShortName">pe13_out[19:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_module/pe14_out" type="array">
+      <obj_property name="ElementShortName">pe14_out[19:0]</obj_property>
+      <obj_property name="ObjectShortName">pe14_out[19:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_module/pe15_out" type="array">
+      <obj_property name="ElementShortName">pe15_out[19:0]</obj_property>
+      <obj_property name="ObjectShortName">pe15_out[19:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_module/pe16_out" type="array">
+      <obj_property name="ElementShortName">pe16_out[19:0]</obj_property>
+      <obj_property name="ObjectShortName">pe16_out[19:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_module/pe17_out" type="array">
+      <obj_property name="ElementShortName">pe17_out[19:0]</obj_property>
+      <obj_property name="ObjectShortName">pe17_out[19:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_module/pe18_out" type="array">
+      <obj_property name="ElementShortName">pe18_out[19:0]</obj_property>
+      <obj_property name="ObjectShortName">pe18_out[19:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_module/pe19_out" type="array">
+      <obj_property name="ElementShortName">pe19_out[19:0]</obj_property>
+      <obj_property name="ObjectShortName">pe19_out[19:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_module/pe20_out" type="array">
+      <obj_property name="ElementShortName">pe20_out[19:0]</obj_property>
+      <obj_property name="ObjectShortName">pe20_out[19:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_module/pe21_out" type="array">
+      <obj_property name="ElementShortName">pe21_out[19:0]</obj_property>
+      <obj_property name="ObjectShortName">pe21_out[19:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_module/pe22_out" type="array">
+      <obj_property name="ElementShortName">pe22_out[19:0]</obj_property>
+      <obj_property name="ObjectShortName">pe22_out[19:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_module/pe23_out" type="array">
+      <obj_property name="ElementShortName">pe23_out[19:0]</obj_property>
+      <obj_property name="ObjectShortName">pe23_out[19:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_module/pe24_out" type="array">
+      <obj_property name="ElementShortName">pe24_out[19:0]</obj_property>
+      <obj_property name="ObjectShortName">pe24_out[19:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_module/pe25_out" type="array">
+      <obj_property name="ElementShortName">pe25_out[19:0]</obj_property>
+      <obj_property name="ObjectShortName">pe25_out[19:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_module/pe26_out" type="array">
+      <obj_property name="ElementShortName">pe26_out[19:0]</obj_property>
+      <obj_property name="ObjectShortName">pe26_out[19:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_module/pe27_out" type="array">
+      <obj_property name="ElementShortName">pe27_out[19:0]</obj_property>
+      <obj_property name="ObjectShortName">pe27_out[19:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_module/pe28_out" type="array">
+      <obj_property name="ElementShortName">pe28_out[19:0]</obj_property>
+      <obj_property name="ObjectShortName">pe28_out[19:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_module/pe29_out" type="array">
+      <obj_property name="ElementShortName">pe29_out[19:0]</obj_property>
+      <obj_property name="ObjectShortName">pe29_out[19:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_module/pe30_out" type="array">
+      <obj_property name="ElementShortName">pe30_out[19:0]</obj_property>
+      <obj_property name="ObjectShortName">pe30_out[19:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_module/pe31_out" type="array">
+      <obj_property name="ElementShortName">pe31_out[19:0]</obj_property>
+      <obj_property name="ObjectShortName">pe31_out[19:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_module/pe32_out" type="array">
+      <obj_property name="ElementShortName">pe32_out[19:0]</obj_property>
+      <obj_property name="ObjectShortName">pe32_out[19:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_module/pe33_out" type="array">
+      <obj_property name="ElementShortName">pe33_out[19:0]</obj_property>
+      <obj_property name="ObjectShortName">pe33_out[19:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_module/pe34_out" type="array">
+      <obj_property name="ElementShortName">pe34_out[19:0]</obj_property>
+      <obj_property name="ObjectShortName">pe34_out[19:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_module/pe35_out" type="array">
+      <obj_property name="ElementShortName">pe35_out[19:0]</obj_property>
+      <obj_property name="ObjectShortName">pe35_out[19:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_module/pe36_out" type="array">
+      <obj_property name="ElementShortName">pe36_out[19:0]</obj_property>
+      <obj_property name="ObjectShortName">pe36_out[19:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_module/pe37_out" type="array">
+      <obj_property name="ElementShortName">pe37_out[19:0]</obj_property>
+      <obj_property name="ObjectShortName">pe37_out[19:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_module/pe38_out" type="array">
+      <obj_property name="ElementShortName">pe38_out[19:0]</obj_property>
+      <obj_property name="ObjectShortName">pe38_out[19:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_module/pe39_out" type="array">
+      <obj_property name="ElementShortName">pe39_out[19:0]</obj_property>
+      <obj_property name="ObjectShortName">pe39_out[19:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_module/pe40_out" type="array">
+      <obj_property name="ElementShortName">pe40_out[19:0]</obj_property>
+      <obj_property name="ObjectShortName">pe40_out[19:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_module/pe41_out" type="array">
+      <obj_property name="ElementShortName">pe41_out[19:0]</obj_property>
+      <obj_property name="ObjectShortName">pe41_out[19:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_module/pe42_out" type="array">
+      <obj_property name="ElementShortName">pe42_out[19:0]</obj_property>
+      <obj_property name="ObjectShortName">pe42_out[19:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_module/pe43_out" type="array">
+      <obj_property name="ElementShortName">pe43_out[19:0]</obj_property>
+      <obj_property name="ObjectShortName">pe43_out[19:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_module/pe44_out" type="array">
+      <obj_property name="ElementShortName">pe44_out[19:0]</obj_property>
+      <obj_property name="ObjectShortName">pe44_out[19:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_module/pe45_out" type="array">
+      <obj_property name="ElementShortName">pe45_out[19:0]</obj_property>
+      <obj_property name="ObjectShortName">pe45_out[19:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_module/pe46_out" type="array">
+      <obj_property name="ElementShortName">pe46_out[19:0]</obj_property>
+      <obj_property name="ObjectShortName">pe46_out[19:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_module/pe47_out" type="array">
+      <obj_property name="ElementShortName">pe47_out[19:0]</obj_property>
+      <obj_property name="ObjectShortName">pe47_out[19:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_module/pe48_out" type="array">
+      <obj_property name="ElementShortName">pe48_out[19:0]</obj_property>
+      <obj_property name="ObjectShortName">pe48_out[19:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_module/pe49_out" type="array">
+      <obj_property name="ElementShortName">pe49_out[19:0]</obj_property>
+      <obj_property name="ObjectShortName">pe49_out[19:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_module/pe50_out" type="array">
+      <obj_property name="ElementShortName">pe50_out[19:0]</obj_property>
+      <obj_property name="ObjectShortName">pe50_out[19:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_module/pe51_out" type="array">
+      <obj_property name="ElementShortName">pe51_out[19:0]</obj_property>
+      <obj_property name="ObjectShortName">pe51_out[19:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_module/pe52_out" type="array">
+      <obj_property name="ElementShortName">pe52_out[19:0]</obj_property>
+      <obj_property name="ObjectShortName">pe52_out[19:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_module/pe53_out" type="array">
+      <obj_property name="ElementShortName">pe53_out[19:0]</obj_property>
+      <obj_property name="ObjectShortName">pe53_out[19:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_module/pe54_out" type="array">
+      <obj_property name="ElementShortName">pe54_out[19:0]</obj_property>
+      <obj_property name="ObjectShortName">pe54_out[19:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_module/pe55_out" type="array">
+      <obj_property name="ElementShortName">pe55_out[19:0]</obj_property>
+      <obj_property name="ObjectShortName">pe55_out[19:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_module/pe56_out" type="array">
+      <obj_property name="ElementShortName">pe56_out[19:0]</obj_property>
+      <obj_property name="ObjectShortName">pe56_out[19:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_module/pe57_out" type="array">
+      <obj_property name="ElementShortName">pe57_out[19:0]</obj_property>
+      <obj_property name="ObjectShortName">pe57_out[19:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_module/pe58_out" type="array">
+      <obj_property name="ElementShortName">pe58_out[19:0]</obj_property>
+      <obj_property name="ObjectShortName">pe58_out[19:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_module/pe59_out" type="array">
+      <obj_property name="ElementShortName">pe59_out[19:0]</obj_property>
+      <obj_property name="ObjectShortName">pe59_out[19:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_module/pe60_out" type="array">
+      <obj_property name="ElementShortName">pe60_out[19:0]</obj_property>
+      <obj_property name="ObjectShortName">pe60_out[19:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_module/pe61_out" type="array">
+      <obj_property name="ElementShortName">pe61_out[19:0]</obj_property>
+      <obj_property name="ObjectShortName">pe61_out[19:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_module/pe62_out" type="array">
+      <obj_property name="ElementShortName">pe62_out[19:0]</obj_property>
+      <obj_property name="ObjectShortName">pe62_out[19:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_module/pe63_out" type="array">
+      <obj_property name="ElementShortName">pe63_out[19:0]</obj_property>
+      <obj_property name="ObjectShortName">pe63_out[19:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_module/pe64_out" type="array">
+      <obj_property name="ElementShortName">pe64_out[19:0]</obj_property>
+      <obj_property name="ObjectShortName">pe64_out[19:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_module/full_out" type="array">
+      <obj_property name="ElementShortName">full_out[19:0]</obj_property>
+      <obj_property name="ObjectShortName">full_out[19:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_module/CLK_PERIOD" type="array">
+      <obj_property name="ElementShortName">CLK_PERIOD[31:0]</obj_property>
+      <obj_property name="ObjectShortName">CLK_PERIOD[31:0]</obj_property>
+   </wvobject>
+</wave_config>
