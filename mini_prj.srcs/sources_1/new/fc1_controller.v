@@ -44,9 +44,6 @@ module fc1_controller
     );
 
     reg [FC1_INPUT_BATCH_COUNTER + FC1_INPUT_BATCHWISE_COUNTER + FC1_OUTPUT_CHANNEL_COUNTER -1 : 0] addr_counter       ;
-    // reg [FC1_INPUT_BATCH_COUNTER            - 1 : 0]                FC1_INPUT_BATCH_COUNTER                          ;
-    // reg [FC1_INPUT_BATCHWISE_COUNTER   - 1 : 0]                FC1_INPUT_BATCHWISE_COUNTER                      ;
-    // reg [FC1_OUTPUT_CHANNEL_COUNTER         - 1 : 0]                FC1_OUTPUT_CHANNEL_COUNTER                       ;
     reg [FC1_WEIGHT_ADDR_COUNTER                                                        - 1 : 0] weight_counter     ;
 
     reg                            fc1_enable         ;
@@ -61,9 +58,6 @@ module fc1_controller
     always @(posedge clk or negedge rst_n) begin            
         if (!rst_n) begin           
             addr_counter                 <=          {FC1_INPUT_BATCH_COUNTER + FC1_INPUT_BATCHWISE_COUNTER + FC1_OUTPUT_CHANNEL_COUNTER{1'b0}} ;
-            // FC1_INPUT_BATCH_COUNTER         <=          FC1_INPUT_BATCH_COUNTER'b0                                      ;
-            // FC1_INPUT_BATCHWISE_COUNTER     <=          FC1_INPUT_BATCHWISE_COUNTER'b0                             ;
-            // FC1_OUTPUT_CHANNEL_COUNTER      <=          FC1_OUTPUT_CHANNEL_COUNTER'b0                                   ;
             weight_counter               <=          {FC1_WEIGHT_ADDR_COUNTER{1'b0}}                                 ;
             fc1_enable                   <=          1'b0                                                        ;
             fc1_flag                     <=          1'b0                                                        ;
@@ -111,15 +105,11 @@ module fc1_controller
                             addr_counter            <=          addr_counter + 1'b1                                          ;
                         end
                     end
-                        
-                    // x_output                     <=          x_input                                                     ;
-                    // w_output                     <=          w_input                                                     ;
+                    
                 end
                 else begin
                     fc1_flag                 <=          1'b0                                                    ;
                     fc1_enable               <=          1'b0                                                    ;
-                    // x_output                 <=          'b0                                                       ;
-                    // w_output                 <=          'b0                                                       ;
                 end
             end
         end
